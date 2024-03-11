@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Fireball.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">scaffold</a> &gt; <a href="index.source.html" class="el_package">WizardTD</a> &gt; <span class="el_source">Fireball.java</span></div><h1>Fireball.java</h1><pre class="source lang-java linenums">package WizardTD;
+import processing.core.PApplet;
+import processing.core.PImage;
+import static processing.core.PApplet.dist;
+
+/**
+ * The type Fireball.
+ */
+public class Fireball {
+    /**
+     * The Type.
+     */
+    private PImage type;
+    /**
+     * The X.
+     */
+    private float x, /**
+     * The Y.
+     */
+    y;
+    /**
+     * The Target.
+     */
+    private Monster target;
+    /**
+     * The Speed.
+     */
+<span class="fc" id="L28">    private final int speed = 5;</span>
+    /**
+     * The Dmg.
+     */
+    private double dmg;
+    /**
+     * If fireball damaged target.
+     */
+<span class="fc" id="L36">    public boolean hasDamaged = false;</span>
+    /**
+     * The Parent tower.
+     */
+    private Tower parentTower;
+
+    /**
+     * Instantiates a new Fireball.
+     *
+     * @param type        the type
+     * @param dmg         the dmg
+     * @param target      the target
+     * @param x           the x
+     * @param y           the y
+     * @param parentTower the parent tower
+     */
+<span class="fc" id="L52">    public Fireball(PImage type, double dmg, Monster target, float x, float y, Tower parentTower){</span>
+<span class="fc" id="L53">        this.type = type;</span>
+<span class="fc" id="L54">        this.dmg =dmg;</span>
+<span class="fc" id="L55">        this.target = target;</span>
+<span class="fc" id="L56">        this.x = x;</span>
+<span class="fc" id="L57">        this.y = y;</span>
+<span class="fc" id="L58">        this.parentTower = parentTower;</span>
+<span class="fc" id="L59">    }</span>
+
+    /**
+     * Get type p image.
+     *
+     * @return the p image
+     */
+    public PImage getType(){
+<span class="fc" id="L67">        return this.type;</span>
+    }
+
+    /**
+     * Gets parent tower.
+     *
+     * @return the parent tower
+     */
+    public Tower getParentTower() {
+<span class="fc" id="L76">        return parentTower;</span>
+    }
+
+    /**
+     * Gets dmg.
+     *
+     * @return the dmg
+     */
+    public double getDmg() {
+<span class="fc" id="L85">        return this.dmg;</span>
+    }
+
+    /**
+     * Get target monster.
+     *
+     * @return the monster
+     */
+    public Monster getTarget(){
+<span class="fc" id="L94">        return this.target;</span>
+    }
+
+    /**
+     * Gets x.
+     *
+     * @return the x
+     */
+    public float getX() {
+<span class="fc" id="L103">        return this.x;</span>
+    }
+
+    /**
+     * Gets y.
+     *
+     * @return the y
+     */
+    public float getY() {
+<span class="fc" id="L112">        return this.y;</span>
+    }
+
+    /**
+     * Move fireball towards target.
+     */
+    public void moveFireball(){
+<span class="fc" id="L119">        double dx = target.getX_Pos() - this.x; //get x and y distance between fireball and target</span>
+<span class="fc" id="L120">        double dy = target.getY_Pos() - this.y;</span>
+
+<span class="fc" id="L122">        double magnitude = Math.sqrt(dx * dx + dy * dy);</span>
+<span class="fc" id="L123">        double dirX = dx / magnitude;</span>
+<span class="fc" id="L124">        double dirY = dy / magnitude; // get direction of each x and y</span>
+
+<span class="fc" id="L126">        double moveX = dirX * this.speed; // move direction so that it moves 5 pixels per second towards target</span>
+<span class="fc" id="L127">        double moveY = dirY * this.speed;</span>
+
+<span class="fc" id="L129">        this.x += (float) moveX; // set fireball to new location</span>
+<span class="fc" id="L130">        this.y += (float) moveY;</span>
+<span class="fc" id="L131">    }</span>
+
+
+    /**
+     * Reached target boolean.
+     *
+     * @return the boolean
+     */
+    public boolean reachedTarget(){
+<span class="fc bfc" id="L140" title="All 2 branches covered.">        if (hasDamaged) {</span>
+<span class="fc" id="L141">            return false; // if already damaged target, return false</span>
+        }
+<span class="fc" id="L143">        float distance = dist(this.x, this.y, target.getX_Pos(), target.getY_Pos());</span>
+<span class="fc bfc" id="L144" title="All 2 branches covered.">        boolean atTarget = distance &lt; 3;</span>
+<span class="fc bfc" id="L145" title="All 2 branches covered.">        if (atTarget) {</span>
+<span class="fc" id="L146">            hasDamaged = true; // if in bounds of target fireball has now damaged target</span>
+        }
+<span class="fc" id="L148">        return atTarget; // returns true or false depending if in range</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.9.202303310957</span></div></body></html>

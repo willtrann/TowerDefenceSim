@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="WizardTD.MonsterTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2023-10-26T16:14:06" hostname="192-168-1-136.tpgi.com.au" time="0.02">
+  <properties/>
+  <testcase name="takeDamage()" classname="WizardTD.MonsterTest" time="0.0"/>
+  <testcase name="TestSlow()" classname="WizardTD.MonsterTest" time="0.001"/>
+  <testcase name="MoveMonster1()" classname="WizardTD.MonsterTest" time="0.001"/>
+  <testcase name="MoveMonster2()" classname="WizardTD.MonsterTest" time="0.001"/>
+  <testcase name="MoveMonster3()" classname="WizardTD.MonsterTest" time="0.0"/>
+  <testcase name="MoveMonster4()" classname="WizardTD.MonsterTest" time="0.001"/>
+  <testcase name="InvalidTestPathSet()" classname="WizardTD.MonsterTest" time="0.004"/>
+  <testcase name="getPath()" classname="WizardTD.MonsterTest" time="0.0"/>
+  <testcase name="dyingAnimation()" classname="WizardTD.MonsterTest" time="0.001"/>
+  <testcase name="TestPathSet()" classname="WizardTD.MonsterTest" time="0.0"/>
+  <testcase name="TestDead1()" classname="WizardTD.MonsterTest" time="0.0"/>
+  <testcase name="TestDead2()" classname="WizardTD.MonsterTest" time="0.0"/>
+  <testcase name="TestConstructor()" classname="WizardTD.MonsterTest" time="0.001"/>
+  <testcase name="setXandY()" classname="WizardTD.MonsterTest" time="0.001"/>
+  <testcase name="dyingAnimation2()" classname="WizardTD.MonsterTest" time="0.0"/>
+  <testcase name="dyingAnimation3()" classname="WizardTD.MonsterTest" time="0.001"/>
+  <testcase name="resetPath()" classname="WizardTD.MonsterTest" time="0.001"/>
+  <system-out><![CDATA[File not found!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

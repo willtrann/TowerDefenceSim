@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="WizardTD.ManaTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2023-10-26T16:14:06" hostname="192-168-1-136.tpgi.com.au" time="0.009">
+  <properties/>
+  <testcase name="increaseKill1()" classname="WizardTD.ManaTest" time="0.001"/>
+  <testcase name="increaseKill2()" classname="WizardTD.ManaTest" time="0.0"/>
+  <testcase name="increaseMana1()" classname="WizardTD.ManaTest" time="0.001"/>
+  <testcase name="increaseMana2()" classname="WizardTD.ManaTest" time="0.0"/>
+  <testcase name="decreaseMana1()" classname="WizardTD.ManaTest" time="0.001"/>
+  <testcase name="decreaseMana2()" classname="WizardTD.ManaTest" time="0.0"/>
+  <testcase name="manaUpgrade1()" classname="WizardTD.ManaTest" time="0.001"/>
+  <testcase name="manaUpgrade2()" classname="WizardTD.ManaTest" time="0.0"/>
+  <testcase name="resetMana()" classname="WizardTD.ManaTest" time="0.0"/>
+  <testcase name="testConstructor()" classname="WizardTD.ManaTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

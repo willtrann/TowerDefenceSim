@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="WizardTD.FireballTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-10-26T16:14:06" hostname="192-168-1-136.tpgi.com.au" time="0.003">
+  <properties/>
+  <testcase name="reachedTarget1()" classname="WizardTD.FireballTest" time="0.0"/>
+  <testcase name="reachedTarget2()" classname="WizardTD.FireballTest" time="0.001"/>
+  <testcase name="reachedTarget3()" classname="WizardTD.FireballTest" time="0.0"/>
+  <testcase name="moveFireball()" classname="WizardTD.FireballTest" time="0.001"/>
+  <testcase name="testConstructor()" classname="WizardTD.FireballTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

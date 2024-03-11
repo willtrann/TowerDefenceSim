@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="WizardTD.AppTest" tests="41" skipped="0" failures="0" errors="0" timestamp="2023-10-26T16:12:34" hostname="192-168-1-136.tpgi.com.au" time="92.23">
+  <properties/>
+  <testcase name="MouseIconP1()" classname="WizardTD.AppTest" time="0.597"/>
+  <testcase name="MouseIconP2()" classname="WizardTD.AppTest" time="0.118"/>
+  <testcase name="MouseIconS1()" classname="WizardTD.AppTest" time="0.111"/>
+  <testcase name="MouseIconS2()" classname="WizardTD.AppTest" time="0.089"/>
+  <testcase name="MouseIconT1()" classname="WizardTD.AppTest" time="0.082"/>
+  <testcase name="MouseIconT2()" classname="WizardTD.AppTest" time="0.094"/>
+  <testcase name="keyPressedU1Place()" classname="WizardTD.AppTest" time="0.078"/>
+  <testcase name="keyPressedU2Place()" classname="WizardTD.AppTest" time="0.075"/>
+  <testcase name="keyPressedU3Place()" classname="WizardTD.AppTest" time="0.08"/>
+  <testcase name="LastWave()" classname="WizardTD.AppTest" time="0.613"/>
+  <testcase name="keyPressedF2()" classname="WizardTD.AppTest" time="0.184"/>
+  <testcase name="keyPressedFF()" classname="WizardTD.AppTest" time="0.127"/>
+  <testcase name="keyPressedP2()" classname="WizardTD.AppTest" time="0.176"/>
+  <testcase name="keyPressedS2()" classname="WizardTD.AppTest" time="0.226"/>
+  <testcase name="keyPressedT2()" classname="WizardTD.AppTest" time="0.28"/>
+  <testcase name="MouseIconM()" classname="WizardTD.AppTest" time="0.386"/>
+  <testcase name="TestDraw()" classname="WizardTD.AppTest" time="0.459"/>
+  <testcase name="DrawSelectedTowerPricings()" classname="WizardTD.AppTest" time="0.214"/>
+  <testcase name="MouseIconFF1()" classname="WizardTD.AppTest" time="0.422"/>
+  <testcase name="MouseIconFF2()" classname="WizardTD.AppTest" time="0.459"/>
+  <testcase name="MouseIconTU1()" classname="WizardTD.AppTest" time="0.433"/>
+  <testcase name="MouseIconTU2()" classname="WizardTD.AppTest" time="0.748"/>
+  <testcase name="MouseIconTU3()" classname="WizardTD.AppTest" time="0.712"/>
+  <testcase name="TestAnimateLose()" classname="WizardTD.AppTest" time="0.389"/>
+  <testcase name="DrawTowerUpgradeIcons()" classname="WizardTD.AppTest" time="0.929"/>
+  <testcase name="placeTower()" classname="WizardTD.AppTest" time="1.181"/>
+  <testcase name="FireballTestWithDoubleSpeed()" classname="WizardTD.AppTest" time="1.037"/>
+  <testcase name="FireballTest()" classname="WizardTD.AppTest" time="1.452"/>
+  <testcase name="FireballDamage()" classname="WizardTD.AppTest" time="1.669"/>
+  <testcase name="MouseIconT2U1()" classname="WizardTD.AppTest" time="3.186"/>
+  <testcase name="MouseIconT2U2()" classname="WizardTD.AppTest" time="4.353"/>
+  <testcase name="MouseIconT2U3()" classname="WizardTD.AppTest" time="1.961"/>
+  <testcase name="Upgrade1()" classname="WizardTD.AppTest" time="4.165"/>
+  <testcase name="Upgrade2()" classname="WizardTD.AppTest" time="7.106"/>
+  <testcase name="Upgrade3()" classname="WizardTD.AppTest" time="6.308"/>
+  <testcase name="keyPressedM()" classname="WizardTD.AppTest" time="6.943"/>
+  <testcase name="keyPressedP()" classname="WizardTD.AppTest" time="11.058"/>
+  <testcase name="keyPressedR()" classname="WizardTD.AppTest" time="7.077"/>
+  <testcase name="keyPressedS()" classname="WizardTD.AppTest" time="10.804"/>
+  <testcase name="keyPressedT()" classname="WizardTD.AppTest" time="8.811"/>
+  <testcase name="FireballSlowDamage()" classname="WizardTD.AppTest" time="7.014"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
